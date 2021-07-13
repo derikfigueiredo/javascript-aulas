@@ -1,4 +1,6 @@
-/*
+//Um objeto é uma coleção de dados e/ou funcionalidades relacionadas (que geralmente consistem em diversas variáveis e funções — que são chamadas de propriedades e métodos quando estão dentro de objetos).
+
+
 //Objeto literal
 const pessoa = {
     nome: 'Luiz',
@@ -23,7 +25,7 @@ console.log(pessoa['nome']);
 console.log(pessoa['sobrenome']);
 
 //Acessando as chaves do objeto atráves da notação de pontos
-console.log(pessoa1.nome);
+/*console.log(pessoa1.nome);
 console.log(pessoa1.sobrenome);
 pessoa1.falarNome();
 
@@ -31,12 +33,10 @@ console.log(pessoa1.getDataNascimento())
 
 for (let chave in pessoa) {
     console.log(pessoa[chave]);
-}
-
+} 
+*/
 //Apagar alguma chave
 //delete pessoa1.sobrenome;
-*/
-
 
 
 

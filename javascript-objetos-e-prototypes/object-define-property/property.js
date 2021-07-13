@@ -1,5 +1,5 @@
 //AULA 71 - 90. Object.defineProperty() e Object.defineProperties()
-
+//Esse método permite uma precisa inclusão ou modificação de uma propriedade em um objeto. 
 
 //Vamos criar nossa função construtora
 function Produto(nome, preco, estoque) {
