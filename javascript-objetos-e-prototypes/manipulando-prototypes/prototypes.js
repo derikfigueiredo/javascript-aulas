@@ -12,11 +12,12 @@ objC.chaveC = 'C';
 //setPrototypesOf para conseguimos mandar as propriedades de objA para objB
 Object.setPrototypeOf(objB, objA);
 Object.setPrototypeOf(objC, objB);
-console.dir(objC)
+console.log(objB.chaveA)
+console.log(objA)
 
 
 ////////////////////////////////////////////////
-/*
+
 function Produto(nome, preco) {
   this.nome = nome;
   this.preco = preco;
@@ -52,6 +53,7 @@ console.log(p2)
 
 
 //CRIAR UM OBJETO E JÁ SETAR O SEU PROTOTYPE
+//Object.create(setar um obj para ser o prototype desse obj, {Setar as propriedades próprias desse objeto})
 const p3 = Object.create(Produto.prototype, {
   preco: {
     writable: true,
@@ -69,4 +71,4 @@ const p3 = Object.create(Produto.prototype, {
 
 p3.aumento(10);
 console.log(p3)
-*/
+

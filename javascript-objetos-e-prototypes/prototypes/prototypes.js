@@ -11,6 +11,11 @@ do JS vai tentar encontrar este membro no próprio objeto e depois a cadeia
 de protótipos é usada até o topo (null) até encontrar (ou não) tal membro.
 */
 
+/* Quando criamos um objetos, automaticamento teremos uma propriedade que referencia a um 
+outro objeto. Todo objeto em JavaScript herda propriedade e métodos do seu prototype ascedente */
+
+//PROTOTYPE CHAIN(Encadeamento de protótipos) = Um objeto possui um prototype e esse prototype também pode ter um prototype que tem outro e assim por diante até que o último elemento dessa sequência seja igual null.
+
 function Pessoa(nome, sobrenome) {
   this.nome = nome;
   this.sobrenome = sobrenome;
@@ -33,3 +38,7 @@ console.dir(data);
 
 // Como a cadeia de protótipos funcionam. Essa é a sequência que javaScript irá realizar para 
 // pessoa -> pesssoa.prototype -> Object.prototype 
+
+
+//Não existem Classes em JavaScript. Elas são só um Syntax Sugar para a Herança baseada em protótipo da linguagem
+//o JavaScript não tem classes; em vez disso, a funcionalidade de classe é realizada por protótipos de objetos. 

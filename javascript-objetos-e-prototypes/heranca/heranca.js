@@ -13,7 +13,7 @@ Produto.prototype.desconto = function(quantia) {
 };
 
 function Camiseta(nome, preco, cor) {
-  Produto.call(this, nome, preco); //utilizamos o call para chamar a função Produto. Com isso, linkamos o obj produto com o obj Camiseta. Dessa forma, Produto.prototype passa a ser o obj pai do camiseta e recebe os argumentos do Camiseta. Contudo, os métodos do obj painão são mandados e por causa disso iremos precisar de utilizar Object.create()
+  Produto.call(this, nome, preco); //Dessa forma, Produto.prototype passa a ser o obj pai do Camiseta e Camiseta herda suas propriedades. Contudo, os métodos do obj pai não são herdados e por causa disso iremos precisar de utilizar Object.create()
   this.cor = cor;
 }
 
