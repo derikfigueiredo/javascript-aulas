@@ -1,3 +1,5 @@
+//Factory functions e prototypes
+
 const falar = {
   falar() {
     console.log(`${this.nome} está falando.`);

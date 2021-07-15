@@ -42,3 +42,5 @@ console.dir(data);
 
 //Não existem Classes em JavaScript. Elas são só um Syntax Sugar para a Herança baseada em protótipo da linguagem
 //o JavaScript não tem classes; em vez disso, a funcionalidade de classe é realizada por protótipos de objetos. 
+
+

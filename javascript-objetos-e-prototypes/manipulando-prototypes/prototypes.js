@@ -10,6 +10,9 @@ const objC = new Object();
 objC.chaveC = 'C';
 
 //setPrototypesOf para conseguimos mandar as propriedades de objA para objB
+//O método Object.setPrototypeOf() configura o 'prototype' de um objeto específico para outro objeto.
+
+//Object.setPrototypeOf(obj, prototype);
 Object.setPrototypeOf(objB, objA);
 Object.setPrototypeOf(objC, objB);
 console.log(objB.chaveA)
@@ -45,7 +48,9 @@ const p2 = {
   nome: 'Caneca',
   preco: 15
 };
+
 Object.setPrototypeOf(p2, Produto.prototype);
+
 
 p2.aumento(10)
 
@@ -54,6 +59,7 @@ console.log(p2)
 
 //CRIAR UM OBJETO E JÁ SETAR O SEU PROTOTYPE
 //Object.create(setar um obj para ser o prototype desse obj, {Setar as propriedades próprias desse objeto})
+//O método Object.create() cria um novo objeto, utilizando um outro objecto existente como protótipo para o novo objeto a ser criado.
 const p3 = Object.create(Produto.prototype, {
   preco: {
     writable: true,
@@ -71,4 +77,6 @@ const p3 = Object.create(Produto.prototype, {
 
 p3.aumento(10);
 console.log(p3)
+
+
 
