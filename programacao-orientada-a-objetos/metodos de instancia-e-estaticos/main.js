@@ -1,5 +1,5 @@
-// Métodos de instância e estáticos
-//Métodos estáticos são métodos que você pode acessar na classe sem instância a classe;
+//                         Métodos de instância e estáticos
+//Métodos estáticos são métodos que você pode acessar na classe sem instânciar a classe;
 //Não vão estar disponível dentro da instância
 //Apenas estarar ligado a classe
 

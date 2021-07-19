@@ -16,7 +16,7 @@ class Carro {
 
   //Utilizamos get para pegar valor de uma propriedade do obj.
   get velocidade() {
-    return this[_velocidade]
+    return this[_velocidade];
   }
 
   acelerar() {
